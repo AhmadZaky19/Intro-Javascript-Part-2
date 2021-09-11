@@ -26,15 +26,6 @@ const searchName = (key, limit, cb) => {
   cb(limitData);
 };
 
-// function searchName(key, limit, cb) {
-//   const searchArr = names.filter((name) => {
-//     return name.toLowerCase().includes(key);
-//   });
-
-//   const limitData = searchArr.slice(0, limit);
-//   cb(limitData);
-// }
-
 const showName = (name) => {
   console.log(name);
 };
