@@ -17,17 +17,26 @@ const names = [
   "Penelope",
 ];
 
-function searchName(key, limit, cb) {
+const searchName = (key, limit, cb) => {
   const searchArr = names.filter((name) => {
     return name.toLowerCase().includes(key);
   });
 
   const limitData = searchArr.slice(0, limit);
   cb(limitData);
-}
+};
 
-function showName(name) {
+// function searchName(key, limit, cb) {
+//   const searchArr = names.filter((name) => {
+//     return name.toLowerCase().includes(key);
+//   });
+
+//   const limitData = searchArr.slice(0, limit);
+//   cb(limitData);
+// }
+
+const showName = (name) => {
   console.log(name);
-}
+};
 
 searchName("li", 3, showName);
